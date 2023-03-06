@@ -1,9 +1,11 @@
 
 
-document.querySelector("body").addEventListener("keyup", keyup);
-function keyup(event, letter){
-    if(event.key == "Enter"){
+document.querySelector("body").addEventListener("keypress", keypress);
+function keypress(event){
+    if(event.key == "a"){
 
-        document.querySelector("body").innerHTML = `<p>test</p>`;
+        let astronaut = document.querySelector(".astronaut-invisible");
+        astronaut.style.transition = 'all 0.5s linear 0s';
+        astronaut.style.opacity = 100;
     }
 }

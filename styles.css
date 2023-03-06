@@ -7,14 +7,31 @@ body{
     align-items:center;
     justify-content:center;
   }
-  .backg-invisible{
+
+  .astronaut-invisible{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+  }
+  .astronaut-visible{
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .backg-astronaut{
     position:relative;
     height:500px;
     width:500px;
     border-radius:50%;
     background-color:rgba(103, 0, 121, 0.821);
-    transform:scale(0.7);
     }
+
   .planet{
     height:200px;
     width:200px;
