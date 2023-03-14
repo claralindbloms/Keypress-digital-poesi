@@ -1,6 +1,6 @@
 body {
   animation-name: background_color;
-  animation-duration: 5000ms;
+  animation-duration: 3000ms;
   animation-fill-mode: forwards;
   padding: 0;
   margin: 0;
@@ -11,18 +11,33 @@ body {
   justify-content: center;
 }
 
+.startUp{
+  visibility: hidden;
+  font-size: 0;
+  display: none;
+}
+
 @keyframes background_color {
   0% {
-    background-color: rgba(25, 25, 112, 0);
-  }
+    background-color: #29242100;
+}
 
-  20% {
-    background-color: midnightblue;
-  }
+20% {
+    background-color: #292421ae;
 
-  100% {
-    background-color: rgba(25, 25, 112, 0);
-  }
+}
+
+50% {
+  background-color: #292421;
+}
+
+80%{
+    background-color: #29242142;
+}
+
+100% {
+    background-color: #29242100;
+}
 }
 
 .textA {
@@ -52,20 +67,9 @@ body {
   }
 }
 
-.invisible {
-  animation-name: aust;
-  animation-duration: 5000ms;
-  animation-fill-mode: forwards;
-  height: 100vh;
-  width: 100vw;
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
 .visible {
   animation-name: aust;
-  animation-duration: 5000ms;
+  animation-duration: 3000ms;
   animation-fill-mode: forwards;
   display: flex;
   height: 100vh;
@@ -80,8 +84,6 @@ body {
   top: 30px;
   height: 500px;
   width: 500px;
-  border-radius: 50%;
-  background-color: rgba(103, 0, 121, 0.821);
 }
 
 .planet {

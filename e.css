@@ -1,4 +1,7 @@
 body{
+  animation-name: background_color;
+  animation-duration: 3000ms;
+  animation-fill-mode: forwards;
     padding:0;
     margin:0;
     height:100vh;
@@ -6,6 +9,68 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
+  }
+  .startUp{
+    visibility: hidden;
+  font-size: 0;
+  display: none;
+
+
+  }
+
+  .textE {
+    animation-name: text_color;
+    animation-duration: 3000ms;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px !important;
+    font-family: 'Indie Flower', cursive;
+    color: #8b8b83;
+  }
+
+  @keyframes text_color {
+    0%{
+      opacity: 0%;
+    }
+    20%{
+      opacity: 70%;
+    }
+    50%{
+      opacity: 100%;
+    }
+    80%{
+      opacity: 20%;
+    }
+    100%{
+      opacity: 0%;
+    }
+  }
+  
+  @keyframes background_color {
+    0% {
+      background-color: #eeeee000;
+  }
+
+  20% {
+      background-color: #eeeee0b0;
+
+  }
+
+  50% {
+    background-color: #eeeee0;
+  }
+
+  80%{
+      background-color: #eeeee043;
+  }
+
+  100% {
+      background-color: #eeeee000;
+  }
   }
   
   @keyframes aust{
@@ -24,7 +89,7 @@ body{
 
 .ele-box{
     animation-name: aust;
-    animation-duration: 5000ms;
+    animation-duration: 3000ms;
     animation-fill-mode: forwards;
     height: 100vh;
     width: 100vw;
@@ -41,7 +106,7 @@ body{
     border-radius: 50%;
     width: 500px;
     height: 500px;
-    background-color: #ed93a2;
+    background-color: #e6e6fa;
   }
   
   .body{
@@ -72,7 +137,7 @@ body{
     border-radius: 50px;
     width: 10%;
     height: 25%;
-    background-color: #ed93a2;
+    background-color: #e6e6fa;
   }
   
   .tail{

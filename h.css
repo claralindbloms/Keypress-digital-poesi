@@ -1,4 +1,7 @@
 body{
+  animation-name: background_color;
+  animation-duration: 3000ms;
+  animation-fill-mode: forwards;
     padding:0;
     margin:0;
     height:100vh;
@@ -6,6 +9,47 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
+  }
+  .startUp{
+    visibility: hidden;
+    font-size: 0;
+  display: none;
+
+  }
+  
+
+  .textH {
+    position: absolute;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px !important;
+    font-family: 'Indie Flower', cursive;
+    color: white;
+  }
+  
+  @keyframes background_color {
+    0% {
+      background-color: #5d478b00;
+  }
+
+  20% {
+      background-color: #5d478bb1;
+
+  }
+
+  50% {
+    background-color: #5d478b;
+  }
+
+  80%{
+      background-color: #5d478b4f;
+  }
+
+  100% {
+      background-color: #5d478b00;
+  }
   }
   
   @keyframes aust{
@@ -24,7 +68,7 @@ body{
 
 .haunted-box{
     animation-name: aust;
-    animation-duration: 5000ms;
+    animation-duration: 3000ms;
     animation-fill-mode: forwards;
     display: flex;
     height: 70vh;

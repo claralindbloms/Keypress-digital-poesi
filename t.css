@@ -5,6 +5,9 @@
   }
 
 body{
+  animation-name: background_color;
+  animation-duration: 3000ms;
+  animation-fill-mode: forwards;
     padding:0;
     margin:0;
     height:100vh;
@@ -12,6 +15,67 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
+  }
+  .startUp{
+    visibility: hidden;
+    font-size: 0;
+  display: none;
+
+  }
+  
+  .textT {
+    animation-name: text_color;
+    animation-duration: 3000ms;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px !important;
+    font-family: 'Indie Flower', cursive;
+    color: #686264;
+  }
+
+  @keyframes text_color {
+    0%{
+      opacity: 0%;
+    }
+    20%{
+      opacity: 70%;
+    }
+    50%{
+      opacity: 100%;
+    }
+    80%{
+      opacity: 20%;
+    }
+    100%{
+      opacity: 0%;
+    }
+  }
+  
+  @keyframes background_color {
+    0% {
+        background-color: #fff0f500;
+    }
+  
+    20% {
+        background-color: #fff0f5b3;
+  
+    }
+  
+    50% {
+      background-color: #fff0f5;
+    }
+  
+    80%{
+        background-color: #fff0f549;
+    }
+  
+    100% {
+        background-color: #fff0f500;
+    }
   }
   
   @keyframes aust{
@@ -29,7 +93,7 @@ body{
   }
   .t-container {
     animation-name: aust;
-    animation-duration: 5000ms;
+    animation-duration: 3000ms;
     animation-fill-mode: forwards;
     height: 31.25em;
     width: 31.25em;
@@ -56,7 +120,7 @@ body{
     content: "";
     height: 4.37em;
     width: 4.37em;
-    background-color: #005f37;
+    background-color: #616126;
     border-radius: 4.37em 4.37em 0 0;
     bottom: 0;
     right: 0;
@@ -64,7 +128,7 @@ body{
   .t-neck {
     height: 3.75em;
     width: 7.5em;
-    background-color: #009f40;
+    background-color: #8e8e38;
     border-radius: 5em 0 9.37em 5em;
     position: absolute;
     left: 14.06em;
@@ -75,7 +139,7 @@ body{
     position: absolute;
     height: 1.25em;
     width: 4.37em;
-    background-color: #009f40;
+    background-color: #8e8e38;
     top: -1.18em;
     left: 3.12em;
   }
@@ -84,7 +148,7 @@ body{
     position: absolute;
     height: 5.62em;
     width: 5.62em;
-    background-color: #009f40;
+    background-color: #8e8e38;
     bottom: 4.87em;
     left: 3.12em;
     border-radius: 2.5em 2.5em 1.87em 0;
@@ -104,7 +168,7 @@ body{
     left: 16.87em;
   }
   .t-leg {
-    background-color: #009f40;
+    background-color: #8e8e38;
     height: 4.37em;
     width: 2.5em;
     position: absolute;
@@ -129,11 +193,11 @@ body{
     left: 15.31em;
   }
   .t-leg-3 {
-    background-color: #005f37;
+    background-color: #616126;
     left: 9.37em;
   }
   .t-leg-4 {
-    background-color: #005f37;
+    background-color: #616126;
     left: 20em;
   }
   .t-eye {

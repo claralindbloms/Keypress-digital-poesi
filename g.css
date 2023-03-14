@@ -1,4 +1,7 @@
 body {
+    animation-name: background_color;
+    animation-duration: 3000ms;
+    animation-fill-mode: forwards;
     padding: 0;
     margin: 0;
     height: 100vh;
@@ -7,6 +10,46 @@ body {
     align-items: center;
     justify-content: center;
 }
+.startUp{
+    visibility: hidden;
+    font-size: 0;
+    display: none;
+
+}
+
+  .textG {
+    position: absolute;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px !important;
+    font-family: 'Indie Flower', cursive;
+    color: white;
+  }
+  
+  @keyframes background_color {
+    0% {
+        background-color: #c5c1aa00;
+    }
+  
+    20% {
+        background-color: #c5c1aab3;
+  
+    }
+  
+    50% {
+      background-color: #c5c1aa;
+    }
+  
+    80%{
+        background-color: #c5c1aa51;
+    }
+  
+    100% {
+        background-color: #c5c1aa00;
+    }
+  }
 
 @keyframes aust {
     0% {
@@ -26,7 +69,7 @@ body {
 
 .ghost-container {
     animation-name: aust;
-    animation-duration: 5000ms;
+    animation-duration: 3000ms;
     animation-fill-mode: forwards;
     position: absolute;
     display: flex;

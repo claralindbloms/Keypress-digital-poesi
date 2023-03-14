@@ -1,0 +1,104 @@
+.startUp{
+    animation-name: my-animation;
+    animation-duration: 25s;
+    animation-fill-mode: forwards;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+}
+
+@keyframes my-animation {
+    0% {
+        color: #87687600;
+        background-color: #e0eee0;
+    }
+    3%{
+        color: #87687662;
+    }
+  
+    8% {
+        background-color: #c7a7b6;
+        color: #876876;
+
+    }
+
+    16%{
+        background-color: #a3cb9b;
+        color: #5a7155;
+
+
+    }
+
+    24%{
+        background-color: #eaeaea;
+        color: #b5a4a4;
+
+    }
+
+    32%{
+        background-color: #eed5d2;
+        color: rgb(128, 114, 114);
+
+    }
+
+    40%{
+      background-color: #faf0e6;
+      color: #a7998c;
+        
+    }
+
+    48% {
+      background-color: #eee8cd;
+      color: #989173;
+
+    }
+
+    56%{
+        background-color: #92bcc0;
+      color: #556f72;
+    }
+  
+    64% {
+        background-color: #fffec5;
+      color: #9d9c76;
+
+    }
+
+    72%{
+        background-color: #fffacd;
+      color: rgb(88, 87, 65);
+
+    }
+
+    80%{
+        background-color: #f0fff0;
+      color: #98ac98;
+
+    }
+    88%{
+        background-color: #f5fffa;
+      color: #a6c2b4;
+
+
+    }
+    100%{
+        background-color: #f0f8ff;
+      color: #869cb0;
+
+    }
+  }
+
+body{
+    margin: 0;
+    overflow-y: hidden;
+}
+
+.ghost-container{
+    display: none;
+}
+

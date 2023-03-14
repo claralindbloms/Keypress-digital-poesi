@@ -4,6 +4,9 @@
     box-sizing: border-box;
   }
   body {
+    animation-name: background_color;
+    animation-duration: 3000ms;
+    animation-fill-mode: forwards;
     padding: 0;
     margin: 0;
     height: 100vh;
@@ -11,6 +14,67 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .startUp{
+    visibility: hidden;
+    font-size: 0;
+  display: none;
+
+  }
+  
+  .textK {
+    animation-name: text_color;
+    animation-duration: 3000ms;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px !important;
+    font-family: 'Indie Flower', cursive;
+    color: #8b7765;
+  }
+
+  @keyframes text_color {
+    0%{
+      opacity: 0%;
+    }
+    20%{
+      opacity: 70%;
+    }
+    50%{
+      opacity: 100%;
+    }
+    80%{
+      opacity: 20%;
+    }
+    100%{
+      opacity: 0%;
+    }
+  }
+  
+  @keyframes background_color {
+    0% {
+        background-color: #faf0e600;
+    }
+  
+    20% {
+        background-color: #faf0e699;
+  
+    }
+  
+    50% {
+      background-color: #faf0e6;
+    }
+  
+    80%{
+        background-color: #faf0e652;
+    }
+  
+    100% {
+        background-color: #faf0e600;
+    }
   }
 
   @keyframes aust {
@@ -31,7 +95,7 @@
 
   .koala-container {
     animation-name: aust;
-    animation-duration: 5000ms;
+    animation-duration: 3000ms;
     animation-fill-mode: forwards;
     height: 500px;
     width: 500px;

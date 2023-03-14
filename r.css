@@ -9,6 +9,9 @@
 }
 
 body{
+	animation-name: background_color;
+	animation-duration: 3000ms;
+	animation-fill-mode: forwards;
     padding:0;
     margin:0;
     height:100vh;
@@ -17,10 +20,71 @@ body{
     align-items:center;
     justify-content:center;
   }
+  .startUp{
+    visibility: hidden;
+    font-size: 0;
+	display: none;
+
+  }
+  
+  .textR {
+    animation-name: text_color;
+    animation-duration: 3000ms;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px !important;
+    font-family: 'Indie Flower', cursive;
+    color: white;
+  }
+
+  @keyframes text_color {
+    0%{
+      opacity: 0%;
+    }
+    20%{
+      opacity: 70%;
+    }
+    50%{
+      opacity: 100%;
+    }
+    80%{
+      opacity: 20%;
+    }
+    100%{
+      opacity: 0%;
+    }
+  }
+  
+  @keyframes background_color {
+    0% {
+        background-color: #cdb79e00;
+    }
+  
+    20% {
+        background-color: #cdb79ea7;
+  
+    }
+  
+    50% {
+      background-color: #cdb79e;
+    }
+  
+    80%{
+        background-color: #cdb79e56;
+    }
+  
+    100% {
+        background-color: #cdb79e00;
+    }
+  }
 
 .robot-visible{
 	animation-name: aust;
-    animation-duration: 5000ms;
+    animation-duration: 3000ms;
     animation-fill-mode: forwards;
     display: flex;
     justify-content: center;
